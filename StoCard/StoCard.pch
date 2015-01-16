@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  StoCard
+//
+//  Created by yangw on 14-9-23.
+//  Copyright (c) 2014年 Zhanghe. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "CardInfo.h"
+#endif
+
