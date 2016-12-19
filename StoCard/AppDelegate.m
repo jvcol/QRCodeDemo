@@ -29,6 +29,8 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
+    NSLog(@"test");
+    
     return YES;
 }
 
