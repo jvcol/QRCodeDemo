@@ -48,7 +48,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    NSLog(@"didReceiveMemoryWarning");
 }
 
 - (void)doRightBarItemPressed:(id)sender {
