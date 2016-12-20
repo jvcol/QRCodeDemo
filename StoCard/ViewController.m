@@ -40,11 +40,15 @@
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
     
+    NSLog(@"test");
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    NSLog(@"didReceiveMemoryWarning");
 }
 
 - (void)doRightBarItemPressed:(id)sender {
