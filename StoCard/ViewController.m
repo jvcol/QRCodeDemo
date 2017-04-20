@@ -26,6 +26,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(doRightBarItemPressed:)];
+    item.accessibilityIdentifier = @"testitem";
     self.navigationItem.rightBarButtonItem = item;
 
     self.title = @"StoCard";
@@ -40,15 +41,11 @@
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
     
-    NSLog(@"test");
-
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    NSLog@("aaa");
 }
 
 - (void)doRightBarItemPressed:(id)sender {

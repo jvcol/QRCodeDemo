@@ -46,10 +46,18 @@
 		4E44318B19D2986A008618C5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44318419D2986A008618C5 /* FMDatabaseQueue.m */; };
 		4E44318C19D2986A008618C5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44318719D2986A008618C5 /* FMResultSet.m */; };
 		4E44318E19D2A3DA008618C5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E44318D19D2A3DA008618C5 /* libsqlite3.dylib */; };
+		AFF91AFC1E23651200907A0F /* StoCardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF91AFB1E23651200907A0F /* StoCardUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4E4430FB19D168B9008618C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E4430D919D168B9008618C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E4430E019D168B9008618C5;
+			remoteInfo = StoCard;
+		};
+		AFF91AFE1E23651200907A0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4E4430D919D168B9008618C5 /* Project object */;
 			proxyType = 1;
@@ -146,6 +154,9 @@
 		4E44318619D2986A008618C5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		4E44318719D2986A008618C5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		4E44318D19D2A3DA008618C5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		AFF91AF91E23651200907A0F /* StoCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF91AFB1E23651200907A0F /* StoCardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoCardUITests.m; sourceTree = "<group>"; };
+		AFF91AFD1E23651200907A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +184,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFF91AF61E23651200907A0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -181,6 +199,7 @@
 			children = (
 				4E4430E319D168B9008618C5 /* StoCard */,
 				4E4430FD19D168B9008618C5 /* StoCardTests */,
+				AFF91AFA1E23651200907A0F /* StoCardUITests */,
 				4E4430E219D168B9008618C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -190,6 +209,7 @@
 			children = (
 				4E4430E119D168B9008618C5 /* StoCard.app */,
 				4E4430FA19D168B9008618C5 /* StoCardTests.xctest */,
+				AFF91AF91E23651200907A0F /* StoCardUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -381,6 +401,15 @@
 			path = FMDB;
 			sourceTree = "<group>";
 		};
+		AFF91AFA1E23651200907A0F /* StoCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFF91AFB1E23651200907A0F /* StoCardUITests.m */,
+				AFF91AFD1E23651200907A0F /* Info.plist */,
+			);
+			path = StoCardUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -419,6 +448,24 @@
 			productReference = 4E4430FA19D168B9008618C5 /* StoCardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AFF91AF81E23651200907A0F /* StoCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF91B021E23651200907A0F /* Build configuration list for PBXNativeTarget "StoCardUITests" */;
+			buildPhases = (
+				AFF91AF51E23651200907A0F /* Sources */,
+				AFF91AF61E23651200907A0F /* Frameworks */,
+				AFF91AF71E23651200907A0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFF91AFF1E23651200907A0F /* PBXTargetDependency */,
+			);
+			name = StoCardUITests;
+			productName = StoCardUITests;
+			productReference = AFF91AF91E23651200907A0F /* StoCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -433,6 +480,11 @@
 					};
 					4E4430F919D168B9008618C5 = {
 						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 4E4430E019D168B9008618C5;
+					};
+					AFF91AF81E23651200907A0F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 4E4430E019D168B9008618C5;
 					};
 				};
@@ -452,6 +504,7 @@
 			targets = (
 				4E4430E019D168B9008618C5 /* StoCard */,
 				4E4430F919D168B9008618C5 /* StoCardTests */,
+				AFF91AF81E23651200907A0F /* StoCardUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -472,6 +525,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4E4430F819D168B9008618C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF91AF71E23651200907A0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -517,6 +577,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFF91AF51E23651200907A0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF91AFC1E23651200907A0F /* StoCardUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -524,6 +592,11 @@
 			isa = PBXTargetDependency;
 			target = 4E4430E019D168B9008618C5 /* StoCard */;
 			targetProxy = 4E4430FB19D168B9008618C5 /* PBXContainerItemProxy */;
+		};
+		AFF91AFF1E23651200907A0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E4430E019D168B9008618C5 /* StoCard */;
+			targetProxy = AFF91AFE1E23651200907A0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -691,6 +764,44 @@
 			};
 			name = Release;
 		};
+		AFF91B001E23651200907A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = StoCardUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.StoCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StoCard;
+			};
+			name = Debug;
+		};
+		AFF91B011E23651200907A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = StoCardUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.StoCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StoCard;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -720,6 +831,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AFF91B021E23651200907A0F /* Build configuration list for PBXNativeTarget "StoCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF91B001E23651200907A0F /* Debug */,
+				AFF91B011E23651200907A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
